@@ -11,7 +11,7 @@ This repository provides an **automated installation script** for setting up a c
 - **PyTorch 2.8.0 (Stable)** ROCm build  
 - **Transformers 4.57.0** + **Accelerate + Diffusers + Datasets**  
 - **Docker environment** with AMD GPU support  
-- **Preconfigured GPU test scripts**
+- **Preconfigured GPU test script**
 
 The setup is fully **non-interactive** and optimized for both **desktop** and **server** deployments.
 
