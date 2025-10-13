@@ -1,7 +1,7 @@
 # ROCm 6.4.2 + OpenCL 2.x + PyTorch 2.8.0 (Stable) + Transformers + Docker Setup
 
-[![ROCm](https://img.shields.io/badge/ROCm-6.4.3-ff6b6b?logo=amd)](https://rocm.docs.amd.com)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.9.0.dev%2Brocm6.4-ee4c2c?logo=pytorch)](https://pytorch.org)
+[![ROCm](https://img.shields.io/badge/ROCm-6.4.2-ff6b6b?logo=amd)](https://rocm.docs.amd.com)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.9.0.dev%2Brocm6.4-ee4c2c?logo=pytorch)](https://pytorch.org/blog/pytorch-2-8/)
 [![Docker](https://img.shields.io/badge/Docker-28.4.0-blue?logo=docker)](https://www.docker.com/)
 [![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04%20%7C%2024.04-e95420?logo=ubuntu)](https://ubuntu.com)
 
