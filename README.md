@@ -23,11 +23,11 @@ The setup is fully **non-interactive** and optimized for both **desktop** and **
 |---------------------|------------------------------------------------------|
 | **OS**            | Ubuntu 22.04.x (Jammy Jellyfish), Ubuntu 24.04.x (Noble Numbat) |
 | **Kernel**        | 5.15.x (22.04) • 6.8.x (24.04)                        |
-| **GPUs**          | AMD CDNA2 • CDNA3 • RDNA3 • **RDNA4**                 |
+| **GPUs**          | AMD CDNA2 • CDNA3 • **RDNA3** • **RDNA4**                 |
 | **Docker**        | 28.5.1 (stable)                                       |
 | **ROCm**          | 6.4.2                                                |
 | **PyTorch**       | 2.8.0                            |
-| **Transformers**  | 4.56.1                                               |
+| **Transformers**  | 4.57.0                                               |
 
 > **⚠️ Note**: **Ubuntu 20.04.x (Focal Fossa)** is **not supported**. The last compatible ROCm version for 20.04 is **6.4.0**.
 
