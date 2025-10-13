@@ -113,7 +113,8 @@ sudo docker run -it \
     --group-add video \
     rocm/vllm-dev:open-r9700-08052025
 ```
-GPU2 has been add to the container
+GPU2 has been added to the container
+
 <img width="933" height="305" alt="{988A3311-56B1-4BDB-95A6-DF00A4D2BE6D}" src="https://github.com/user-attachments/assets/b630ad80-b163-453a-be29-b03c346aae8b" />
 
 ## 🧪 Testing ROCm + PyTorch
