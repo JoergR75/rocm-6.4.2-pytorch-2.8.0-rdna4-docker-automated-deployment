@@ -49,6 +49,9 @@ The setup is fully **non-interactive** and optimized for both **desktop** and **
 ```bash
 wget https://raw.githubusercontent.com/JoergR75/rocm-6.4.2-pytorch-2.8.0-rdna4-docker-automated-deployment/refs/heads/main/script_module_ROCm_642_Ubuntu_22.04-24.04_pytorch_280stable_server.py
 ```
+
+<img width="1317" height="199" alt="{6FE15F72-197E-4871-A60C-F77F12EC7261}" src="https://github.com/user-attachments/assets/132b0550-077a-4dfb-88ef-32d154bbf94b" />
+
 ### 2️⃣ **Run the Installer**
 ```bash
 bash script_module_ROCm_642_Ubuntu_22.04-24.04_pytorch_280stable_server.py
