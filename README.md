@@ -178,7 +178,7 @@ If it is disabled, **P2P** will be deactivated, as shown below:
 
 <img width="458" height="520" alt="image" src="https://github.com/user-attachments/assets/31f929b0-0c6a-4f3e-b2e7-e2dd4ac60ef7" />
 
-### How to Enable **Resize BAR** in SBIOS
+### ⚙️ How to Enable **Resize BAR** in SBIOS
 
 1. Enter **SBIOS**  
 2. Navigate to **Advanced**  
