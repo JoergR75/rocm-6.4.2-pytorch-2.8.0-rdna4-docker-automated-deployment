@@ -78,7 +78,9 @@ Use the container image you need.
 ```bash
 # RDNA4 build
 sudo docker pull rocm/vllm-dev:open-r9700-08052025
-
+```
+or
+```bash
 # CDNA3 build
 sudo docker pull rocm/vllm:latest
 ```
