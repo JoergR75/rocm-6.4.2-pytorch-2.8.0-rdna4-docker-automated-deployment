@@ -1,4 +1,4 @@
-# ROCm 6.4.2 + OpenCL 2.x + PyTorch 2.8.0 (Stable) + Transformers 4.x + Docker 28.4 Setup
+# ROCm 6.4.2 + OpenCL 2.x + PyTorch 2.8.0 (Stable) + Transformers + Docker Setup
 
 [![ROCm](https://img.shields.io/badge/ROCm-6.4.2-ff6b6b?logo=amd)](https://rocm.docs.amd.com/en/docs-6.4.2/about/release-notes.html)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.8.0%2Brocm6.4-ee4c2c?logo=pytorch)](https://pytorch.org/blog/pytorch-2-8/)
