@@ -92,7 +92,7 @@ sudo docker run -it \
     --group-add video \
     rocm/vllm-dev:open-r9700-08052025
 ```
-With "rocm-smi" you can verify all available GPUs (here 2x Radeon AI PRO R9700 GPUs)
+With `rocm-smi`, you can verify all available GPUs (in this case, 2× Radeon AI PRO R9700 GPUs).
 <img width="929" height="199" alt="{F715178C-A958-4529-9BB3-9F2E2F7661A2}" src="https://github.com/user-attachments/assets/46094f88-5540-453d-829e-f2ec07b3ad95" />
 
 If you need to add a specific GPU, you can use the **passthrough** option.  
