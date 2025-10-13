@@ -47,11 +47,11 @@ The setup is fully **non-interactive** and optimized for both **desktop** and **
 
 ### 1️⃣ **Download the Script from the Repository**
 ```bash
-wget https://raw.githubusercontent.com/JoergR75/rocm-6.4.3-rdna4-docker-automated-deployment/refs/heads/main/script_module_ROCm_643_Ubuntu_22.04-24.04_pytorch_290_docker_v1server.sh
+wget https://raw.githubusercontent.com/JoergR75/rocm-6.4.2-pytorch-2.8.0-rdna4-docker-automated-deployment/refs/heads/main/script_module_ROCm_642_Ubuntu_22.04-24.04_pytorch_280stable_server.py
 ```
 ### 2️⃣ **Run the Installer**
 ```bash
-bash script_module_ROCm_643_Ubuntu_22.04-24.04_pytorch_290_docker_v1server.sh
+bash script_module_ROCm_642_Ubuntu_22.04-24.04_pytorch_280stable_server.py
 ```
 The installation takes ~15 minutes depending on internet speed and hardware performance.
 
