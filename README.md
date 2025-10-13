@@ -2,7 +2,7 @@
 
 [![ROCm](https://img.shields.io/badge/ROCm-6.4.2-ff6b6b?logo=amd)](https://rocm.docs.amd.com/en/docs-6.4.2/about/release-notes.html)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.8.0%2Brocm6.4-ee4c2c?logo=pytorch)](https://pytorch.org/blog/pytorch-2-8/)
-[![Docker](https://img.shields.io/badge/Docker-28.4.0-blue?logo=docker)](https://www.docker.com/)
+[![Docker](https://img.shields.io/badge/Docker-28.5.1-blue?logo=docker)](https://www.docker.com/)
 [![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04%20%7C%2024.04-e95420?logo=ubuntu)](https://ubuntu.com)
 
 ## 📌 Overview
