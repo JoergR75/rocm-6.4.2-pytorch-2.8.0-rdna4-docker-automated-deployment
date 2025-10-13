@@ -9,7 +9,7 @@
 This repository provides an **automated installation script** for setting up a complete **AMD ROCm 6.4.3** development environment with:
 - **ROCm 6.4.2** GPU drivers + OpenCL 2.x SDK  
 - **PyTorch 2.8.0 (Stable)** ROCm build  
-- **Transformers 4.56.1** + **Accelerate + Diffusers + Datasets**  
+- **Transformers 4.57.0** + **Accelerate + Diffusers + Datasets**  
 - **Docker environment** with AMD GPU support  
 - **Preconfigured GPU test scripts**
 
