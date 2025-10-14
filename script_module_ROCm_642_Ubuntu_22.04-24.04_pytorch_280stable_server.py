@@ -116,17 +116,17 @@ install_jellyfish() {
 
     print '\nInstalling Pytorch 2.8.0 (Stable), Transformers environment ...\n'
 
-    python3 -m pip install --upgrade pip
-    python3 -m pip install --upgrade pip wheel
-    python3 -m pip install joblib
-    python3 -m pip install setuptools_scm
-    python3 -m pip install torch torchvision --index-url https://download.pytorch.org/whl/rocm6.4
-    python3 -m pip install transformers
-    python3 -m pip install accelerate
-    python3 -m pip install -U diffusers
-    python3 -m pip install protobuf
-    python3 -m pip install sentencepiece
-    python3 -m pip install datasets
+    python3 -m pip install --upgrade pip --quiet --no-input
+    python3 -m pip install --upgrade pip wheel --quiet --no-input
+    python3 -m pip install joblib --quiet --no-input
+    python3 -m pip install setuptools_scm --quiet --no-input
+    python3 -m pip install torch torchvision --index-url https://download.pytorch.org/whl/rocm6.4 --quiet --no-input
+    python3 -m pip install transformers --quiet --no-input
+    python3 -m pip install accelerate --quiet --no-input
+    python3 -m pip install -U diffusers --quiet --no-input
+    python3 -m pip install protobuf --quiet --no-input
+    python3 -m pip install sentencepiece --quiet --no-input 
+    python3 -m pip install datasets --quiet --no-input
 }
 
 install_noble() {
