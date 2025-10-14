@@ -102,13 +102,14 @@ install_jellyfish() {
     # Install tools - git, htop, cmake, libmsgpack-dev, ncdu (NCurses Disk Usage utility / df -h) and freeipmi-tools (BMC version read)
 
     source ~/.bashrc
-    sudo DEBIAN_FRONTEND=noninteractive apt install -y git
-    sudo DEBIAN_FRONTEND=noninteractive apt install -y htop
-    sudo DEBIAN_FRONTEND=noninteractive apt install -y freeipmi-tools
-    sudo DEBIAN_FRONTEND=noninteractive apt install -y ncdu
-    sudo DEBIAN_FRONTEND=noninteractive apt install -y cmake
-    sudo DEBIAN_FRONTEND=noninteractive apt install -y libmsgpack-dev
-    sudo DEBIAN_FRONTEND=noninteractive apt install -y rocm-bandwidth-test
+    sudo DEBIAN_FRONTEND=noninteractive apt-get update
+    sudo DEBIAN_FRONTEND=noninteractive apt-get install -y git
+    sudo DEBIAN_FRONTEND=noninteractive apt-get install -y htop
+    sudo DEBIAN_FRONTEND=noninteractive apt-get install -y freeipmi-tools
+    sudo DEBIAN_FRONTEND=noninteractive apt-get install -y ncdu
+    sudo DEBIAN_FRONTEND=noninteractive apt-get install -y cmake
+    sudo DEBIAN_FRONTEND=noninteractive apt-get install -y libmsgpack-dev
+    sudo DEBIAN_FRONTEND=noninteractive apt-get install -y rocm-bandwidth-test
 
     echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
     source ~/.bashrc
