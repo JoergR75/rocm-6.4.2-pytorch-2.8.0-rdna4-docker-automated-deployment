@@ -56,6 +56,7 @@ wget https://raw.githubusercontent.com/JoergR75/rocm-6.4.2-pytorch-2.8.0-rdna4-d
 ```bash
 bash script_module_ROCm_642_Ubuntu_22.04-24.04_pytorch_280stable_server.py
 ```
+**⚠️ Note**: Password can be required
 
 <img width="933" height="229" alt="{3FEC3863-B012-4D76-B8FA-D9CB4554286D}" src="https://github.com/user-attachments/assets/01611863-6956-4d6a-9a7d-c7820e1a1a94" />
 
