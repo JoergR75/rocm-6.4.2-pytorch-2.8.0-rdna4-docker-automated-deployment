@@ -240,13 +240,13 @@ print(c)
 EOF
 
 # Install Docker enviroment
-print '\nInstalling and configuring a Docker environment (stable version) with required dependencies and the official Docker repository, installs Docker Engine and Docker Compose and configures user permissions to allow non-root access\n'
+print '\nInstalling and configuring a Docker environment (stable version) with required dependencies and the official Docker repository,\ninstalls Docker Engine and Docker Compose and configures user permissions to allow non-root access\n'
 
 # Update your package list
 sudo apt-get update
 
 # Install required dependencies
-sudo apt-get install apt-transport-https ca-certificates curl software-properties-common --yes
+sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common
 
 # Add the Docker GPG key
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
@@ -256,7 +256,7 @@ echo "deb [signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://dow
 
 # Install Docker
 sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io --yes
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 
 # Add your user to the "docker" group (optional, to run Docker without "sudo")
 sudo usermod -a -G docker ${SUDO_USER:-$USER}
