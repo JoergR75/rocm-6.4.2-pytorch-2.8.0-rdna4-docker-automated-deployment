@@ -16,7 +16,7 @@
 #   - Ubuntu 24.04.3 LTS (Noble Numbat)
 #
 # Kernel Versions Tested:
-#   - Ubuntu 22.04: 5.15.0-144
+#   - Ubuntu 22.04: 5.15.0-157
 #   - Ubuntu 24.04: 6.8.0-85
 #
 # Supported Hardware:
