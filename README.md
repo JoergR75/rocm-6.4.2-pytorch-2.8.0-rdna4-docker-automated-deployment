@@ -93,7 +93,7 @@ Expected Output Example:
 
 <img width="487" height="169" alt="{37DFFCFB-91B7-480F-88C0-1A3A1A42FEDE}" src="https://github.com/user-attachments/assets/e779ef4b-2e8c-430a-9af6-43071d2bf4ba" />
 
-## 📶 ROCm Bandwidth Test (`rocm-bandwidth-test -a`)
+## 📶 ROCm Bandwidth Test
 
 **AMD’s ROCm Bandwidth Test utility** with the **`-a` (all tests)** flag runs a complete set of bandwidth diagnostics.
 
