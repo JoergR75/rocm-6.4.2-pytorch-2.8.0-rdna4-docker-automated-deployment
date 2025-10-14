@@ -50,6 +50,7 @@ Install **Ubuntu 22.04.5 LTS** or **Ubuntu 24.04.3 LTS** (Server or Desktop vers
 
 **Recommendations:**
 - Use a fresh Ubuntu installation.
+  - If you have an older version installed, follow our [uninstallation method](https://rocm.docs.amd.com/en/docs-5.6.0/deploy/linux/os-native/uninstall.html).
 - Assign the full SSD capacity during installation.
 - Install **OpenSSH** for remote SSH management.
 
