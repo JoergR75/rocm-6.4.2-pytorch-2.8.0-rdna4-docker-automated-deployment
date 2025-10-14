@@ -61,62 +61,6 @@ bash script_module_ROCm_642_Ubuntu_22.04-24.04_pytorch_280stable_server.py
 
 The installation takes ~15 minutes depending on internet speed and hardware performance.
 
-## 🐋 Docker Integration
-
-The script sets up a Docker environment with GPU passthrough support via ROCm.
-
-Check Docker Installation
-```bash
-docker --version
-```
-<img width="336" height="51" alt="{F2D3E67E-82FF-4B89-9716-D30432F7BA02}" src="https://github.com/user-attachments/assets/9149968c-ff76-46d4-a821-d43ab20baf43" />
-
-### 🤖 vLLM Docker Images
-
-To use vLLM optimized for RDNA4 and CDNA3:
-Use the container image you need.
-```bash
-# RDNA4 build
-sudo docker pull rocm/vllm-dev:open-r9700-08052025
-```
-or
-```bash
-# CDNA3 build
-sudo docker pull rocm/vllm:latest
-```
-
-Run vLLM with all available AMD GPU Access (example for RDNA4)
-```bash
-sudo docker run -it \
-    --device=/dev/kfd \
-    --device=/dev/dri \
-    --security-opt seccomp=unconfined \
-    --group-add video \
-    rocm/vllm-dev:open-r9700-08052025
-```
-With `rocm-smi`, you can verify all available GPUs (in this case, 2× Radeon AI PRO R9700 GPUs).
-
-<img width="929" height="199" alt="{F715178C-A958-4529-9BB3-9F2E2F7661A2}" src="https://github.com/user-attachments/assets/46094f88-5540-453d-829e-f2ec07b3ad95" />
-
-If you need to add a specific GPU, you can use the **passthrough** option.  
-First, verify the available GPUs in the `/dev/dri` directory.
-
-<img width="381" height="64" alt="{CA7F5FFD-B028-4620-B625-A0FCDA00155D}" src="https://github.com/user-attachments/assets/b976b314-f885-4373-8452-be52a8a05244" />
-
-Let's choose **GPU2**, also referred to as **"card2"** or **"renderD129"**.
-```bash
-sudo docker run -it \
-    --device=/dev/kfd \
-    --device=/dev/dri/card2 \
-    --device=/dev/dri/renderD129 \
-    --security-opt seccomp=unconfined \
-    --group-add video \
-    rocm/vllm-dev:open-r9700-08052025
-```
-GPU2 has been added to the container
-
-<img width="933" height="305" alt="{988A3311-56B1-4BDB-95A6-DF00A4D2BE6D}" src="https://github.com/user-attachments/assets/b630ad80-b163-453a-be29-b03c346aae8b" />
-
 ## 🧪 Testing ROCm + PyTorch
 
 After rebooting, verify your setup:
@@ -185,4 +129,61 @@ If it is disabled, **P2P** will be deactivated, as shown below:
 3. Go to **PCI Subsystem Settings**
 
 <img width="357" height="203" alt="image" src="https://github.com/user-attachments/assets/0f1d7c5f-5433-4c5e-afd8-72158c603482" />
+
 <img width="492" height="150" alt="image" src="https://github.com/user-attachments/assets/4261936a-d983-481a-8129-9f9bd1f8a0a4" />
+
+## 🐋 Docker Integration
+
+The script sets up a Docker environment with GPU passthrough support via ROCm.
+
+Check Docker Installation
+```bash
+docker --version
+```
+<img width="336" height="51" alt="{F2D3E67E-82FF-4B89-9716-D30432F7BA02}" src="https://github.com/user-attachments/assets/9149968c-ff76-46d4-a821-d43ab20baf43" />
+
+### 🤖 vLLM Docker Images
+
+To use vLLM optimized for RDNA4 and CDNA3:
+Use the container image you need.
+```bash
+# RDNA4 build
+sudo docker pull rocm/vllm-dev:open-r9700-08052025
+```
+or
+```bash
+# CDNA3 build
+sudo docker pull rocm/vllm:latest
+```
+
+Run vLLM with all available AMD GPU Access (example for RDNA4)
+```bash
+sudo docker run -it \
+    --device=/dev/kfd \
+    --device=/dev/dri \
+    --security-opt seccomp=unconfined \
+    --group-add video \
+    rocm/vllm-dev:open-r9700-08052025
+```
+With `rocm-smi`, you can verify all available GPUs (in this case, 2× Radeon AI PRO R9700 GPUs).
+
+<img width="929" height="199" alt="{F715178C-A958-4529-9BB3-9F2E2F7661A2}" src="https://github.com/user-attachments/assets/46094f88-5540-453d-829e-f2ec07b3ad95" />
+
+If you need to add a specific GPU, you can use the **passthrough** option.  
+First, verify the available GPUs in the `/dev/dri` directory.
+
+<img width="381" height="64" alt="{CA7F5FFD-B028-4620-B625-A0FCDA00155D}" src="https://github.com/user-attachments/assets/b976b314-f885-4373-8452-be52a8a05244" />
+
+Let's choose **GPU2**, also referred to as **"card2"** or **"renderD129"**.
+```bash
+sudo docker run -it \
+    --device=/dev/kfd \
+    --device=/dev/dri/card2 \
+    --device=/dev/dri/renderD129 \
+    --security-opt seccomp=unconfined \
+    --group-add video \
+    rocm/vllm-dev:open-r9700-08052025
+```
+GPU2 has been added to the container
+
+<img width="933" height="305" alt="{988A3311-56B1-4BDB-95A6-DF00A4D2BE6D}" src="https://github.com/user-attachments/assets/b630ad80-b163-453a-be29-b03c346aae8b" />
