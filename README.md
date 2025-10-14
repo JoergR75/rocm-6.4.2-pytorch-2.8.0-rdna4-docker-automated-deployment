@@ -138,7 +138,7 @@ If it is disabled, **P2P** will be deactivated, as shown below:
 3. Go to **PCI Subsystem Settings**
 
 <img width="357" height="203" alt="image" src="https://github.com/user-attachments/assets/0f1d7c5f-5433-4c5e-afd8-72158c603482" />
-
+=>
 <img width="492" height="150" alt="image" src="https://github.com/user-attachments/assets/4261936a-d983-481a-8129-9f9bd1f8a0a4" />
 
 ## 🐋 Docker Integration
