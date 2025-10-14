@@ -129,7 +129,7 @@ The tool prints results in a **matrix format** showing bandwidth (GB/s) between 
 Make sure **"Resize BAR"** is enabled in the **SBIOS**.  
 If it is disabled, **P2P** will be deactivated, as shown below:
 
-<img width="458" height="520" alt="image" src="https://github.com/user-attachments/assets/31f929b0-0c6a-4f3e-b2e7-e2dd4ac60ef7" />
+<img width="634" height="654" alt="{C8894609-B944-443A-9A1B-D183F18E9C28}" src="https://github.com/user-attachments/assets/de3ab31b-6946-4770-8798-a9e820ce0c1b" />
 
 ### ⚙️ How to Enable **Resize BAR** in SBIOS
 
