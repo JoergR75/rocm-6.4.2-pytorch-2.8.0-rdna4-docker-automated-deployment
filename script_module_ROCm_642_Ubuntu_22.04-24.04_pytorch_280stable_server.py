@@ -60,7 +60,7 @@ print '\nROCm 6.4.2 + OpenCL 2.x + PyTorch 2.8.0 (Stable) + Transformers + Docke
 print '\nUbuntu OS Update ...\n'
 
 sudo apt-get update
-sudo DEBIAN_FRONTEND=noninteractive apt -y upgrade
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y upgrade
 
 print '\nDone\n'
 
@@ -74,13 +74,13 @@ install_jellyfish() {
     # Download the installer script
     wget https://repo.radeon.com/amdgpu-install/6.4.2/ubuntu/jammy/amdgpu-install_6.4.60402-1_all.deb
     # install latest headers and static library files necessary for building C++ programs which use libstdc++
-    sudo DEBIAN_FRONTEND=noninteractive apt install "linux-headers-$(uname -r)" "linux-modules-extra-$(uname -r)" --yes
-    sudo DEBIAN_FRONTEND=noninteractive apt install python3-setuptools python3-wheel libpython3.10 --yes
-    sudo DEBIAN_FRONTEND=noninteractive apt install libstdc++-12-dev --yes
-    sudo DEBIAN_FRONTEND=noninteractive apt install git-lfs --yes
+    sudo DEBIAN_FRONTEND=noninteractive apt-get install "linux-headers-$(uname -r)" "linux-modules-extra-$(uname -r)" --yes
+    sudo DEBIAN_FRONTEND=noninteractive apt-get install python3-setuptools python3-wheel libpython3.10 --yes
+    sudo DEBIAN_FRONTEND=noninteractive apt-get install libstdc++-12-dev --yes
+    sudo DEBIAN_FRONTEND=noninteractive apt-get install git-lfs --yes
 
     # Install with "default" settings (no interaction)
-    sudo DEBIAN_FRONTEND=noninteractive apt install -y ./amdgpu-install_6.4.60402-1_all.deb
+    sudo DEBIAN_FRONTEND=noninteractive apt-get install -y ./amdgpu-install_6.4.60402-1_all.deb
 
     # Installing multiple use cases including ROCm 6.4.2, OCL and HIP SDK
 
@@ -116,17 +116,17 @@ install_jellyfish() {
 
     print '\nInstalling Pytorch 2.8.0 (Stable), Transformers environment ...\n'
 
-    pip3 install --upgrade pip
-    pip3 install --upgrade pip wheel
-    pip3 install joblib
-    pip3 install setuptools_scm
-    pip3 install torch torchvision --index-url https://download.pytorch.org/whl/rocm6.4
-    pip3 install transformers
-    pip3 install accelerate
-    pip3 install -U diffusers
-    pip3 install protobuf
-    pip3 install sentencepiece
-    pip3 install datasets
+    python3 -m pip install --upgrade pip
+    python3 -m pip install --upgrade pip wheel
+    python3 -m pip install joblib
+    python3 -m pip install setuptools_scm
+    python3 -m pip install torch torchvision --index-url https://download.pytorch.org/whl/rocm6.4
+    python3 -m pip install transformers
+    python3 -m pip install accelerate
+    python3 -m pip install -U diffusers
+    python3 -m pip install protobuf
+    python3 -m pip install sentencepiece
+    python3 -m pip install datasets
 }
 
 install_noble() {
