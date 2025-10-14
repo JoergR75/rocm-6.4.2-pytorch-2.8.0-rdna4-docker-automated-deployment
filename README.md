@@ -45,14 +45,22 @@ The setup is fully **non-interactive** and optimized for both **desktop** and **
 
 ## 🚀 Installation
 
-### 1️⃣ **Download the Script from the Repository**
+### 1️⃣ **System preperation**
+Install **Ubuntu 22.04.5 LTS** or **Ubuntu 24.04.3 LTS** (Server or Desktop version).
+
+**Recommendations:**
+- Use a fresh Ubuntu installation.
+- Assign the full SSD capacity during installation.
+- Install **OpenSSH** for remote SSH management.
+
+### 2️⃣ **Download the Script from the Repository**
 ```bash
 wget https://raw.githubusercontent.com/JoergR75/rocm-6.4.2-pytorch-2.8.0-rdna4-docker-automated-deployment/refs/heads/main/script_module_ROCm_642_Ubuntu_22.04-24.04_pytorch_280stable_server.py
 ```
 
 <img width="920" height="228" alt="{F825B0F7-4B09-4BF5-B946-BB2D54C338F1}" src="https://github.com/user-attachments/assets/be349829-e148-4e7a-a629-0549b7532220" />
 
-### 2️⃣ **Run the Installer**
+### 3️⃣ **Run the Installer**
 ```bash
 bash script_module_ROCm_642_Ubuntu_22.04-24.04_pytorch_280stable_server.py
 ```
