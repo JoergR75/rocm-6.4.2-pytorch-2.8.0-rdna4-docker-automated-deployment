@@ -22,7 +22,7 @@ The setup is fully **non-interactive** and optimized for both **desktop** and **
 | **Component**      | **Supported Versions**                                |
 |---------------------|------------------------------------------------------|
 | **OS**            | Ubuntu 22.04.x (Jammy Jellyfish), Ubuntu 24.04.x (Noble Numbat) |
-| **Kernel**        | 5.15.x (22.04) • 6.8.0-85 (24.04.3)                        |
+| **Kernel**        | 5.15.x (22.04) • 6.8.0-85 (24.04.3) - tested                       |
 | **GPUs**          | AMD CDNA2 • CDNA3 • **RDNA3** • **RDNA4**                 |
 | **Docker**        | 28.5.1 (stable)                                       |
 | **ROCm**          | 6.4.2                                                |
