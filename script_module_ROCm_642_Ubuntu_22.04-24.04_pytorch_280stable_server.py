@@ -86,8 +86,8 @@ install_jellyfish() {
 
     print '\nInstalling ROCm 6.4.2 + OCL 2.x environment ...\n'
 
-    sudo apt update
-    sudo apt install amdgpu-dkms rocm --yes
+    sudo apt-get update
+    sudo apt-get install -y amdgpu-dkms rocm
 
     # Groups setup and ROCm/OCL path in global *.icd file
     # Add path into global amdocl64*.icd file
@@ -243,10 +243,10 @@ EOF
 print '\nInstalling and configuring a Docker environment (stable version) with required dependencies and the official Docker repository, installs Docker Engine and Docker Compose and configures user permissions to allow non-root access\n'
 
 # Update your package list
-sudo apt update
+sudo apt-get update
 
 # Install required dependencies
-sudo apt install apt-transport-https ca-certificates curl software-properties-common --yes
+sudo apt-get install apt-transport-https ca-certificates curl software-properties-common --yes
 
 # Add the Docker GPG key
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
@@ -255,8 +255,8 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o 
 echo "deb [signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 # Install Docker
-sudo apt update
-sudo apt install docker-ce docker-ce-cli containerd.io --yes
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io --yes
 
 # Add your user to the "docker" group (optional, to run Docker without "sudo")
 sudo usermod -a -G docker ${SUDO_USER:-$USER}
