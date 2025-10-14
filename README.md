@@ -55,7 +55,7 @@ Install **Ubuntu 22.04.5 LTS** or **Ubuntu 24.04.3 LTS** (Server or Desktop vers
     ```bash
     pip3 uninstall torch torchvision
     ```
-- Assign the full SSD capacity during installation.
+- Assign the full storage capacity during installation.
 - Install **OpenSSH** for remote SSH management.
 
 ### 2️⃣ **Download the Script from the Repository**
