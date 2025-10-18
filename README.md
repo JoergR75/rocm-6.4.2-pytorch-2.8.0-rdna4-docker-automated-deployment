@@ -51,12 +51,10 @@ Install **Ubuntu 22.04.5 LTS** or **Ubuntu 24.04.3 LTS** (Server or Desktop vers
 **Recommendations:**
 - Use a fresh Ubuntu installation.
   - If you have an **older** version of **ROCm** installed, follow our [uninstallation method](https://rocm.docs.amd.com/en/docs-5.6.0/deploy/linux/os-native/uninstall.html).
-  - If you have an **older** version of **PyTorch** installed, you can uninstall it with:  
-  Choose your Ubuntu version below to view the correct de-installation steps.
-
+  - If you have an **older version** of **PyTorch** installed, you can uninstall it by following the steps for your Ubuntu version below:  
     | Ubuntu 22.04.x (Jammy Jellyfish) | Ubuntu 24.04.x (Noble Numbat) |
     |---------------------------------|--------------------------------|
-    | <details><summary>🟢 Show</summary><pre><code>pip3 uninstall torch torchvision</code></pre></details> | <details><summary>🔵 Show</summary><pre><code>pip3 install -U openai-whisper --break-system-packages</code></pre></details> |
+    | <details><summary>🟢 Show</summary><pre><code>pip3 uninstall torch torchvision</code></pre></details> | <details><summary>🔵 Show</summary><pre><code>pip3 uninstall torch torchvision --break-system-packages</code></pre></details> |
 
 - Assign the full storage capacity during installation.
 - Install **OpenSSH** for remote SSH management.
