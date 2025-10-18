@@ -75,6 +75,11 @@ bash script_module_ROCm_642_Ubuntu_22.04-24.04_pytorch_280stable_server.py
 
 The installation takes ~15 minutes depending on internet speed and hardware performance.
 
+### 4️⃣ **Reboot the System**
+After the successful installation, press "y" to reboot the system and activate all installed components.
+
+<img width="1536" height="702" alt="image" src="https://github.com/user-attachments/assets/4abcb5ac-2ab4-498f-b191-ddf5f9ccf270" />
+
 ## 🧪 Testing ROCm + PyTorch
 
 After rebooting, verify your setup:
