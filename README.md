@@ -26,7 +26,7 @@ The setup is fully **non-interactive** and optimized for both **desktop** and **
 | **GPUs**          | AMD CDNA2 • CDNA3 • **RDNA3** • **RDNA4**                 |
 | **Docker**        | 28.5.1 (stable)                                       |
 | **ROCm**          | 6.4.2                                                |
-| **PyTorch**       | 2.8.0+rocm6.4                            |
+| **PyTorch**       | 2.8.0+rocm6.4, torchvision 0.23                            |
 | **Transformers**  | 4.57.0                                               |
 
 **⚠️ Note**: **Ubuntu 20.04.x (Focal Fossa)** is **not supported**. The last compatible ROCm version for 20.04 is **6.4.0**.
