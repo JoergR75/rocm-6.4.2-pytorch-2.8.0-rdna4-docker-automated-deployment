@@ -120,7 +120,7 @@ install_jellyfish() {
     python3 -m pip install --upgrade pip wheel --quiet --no-input
     python3 -m pip install joblib --quiet --no-input
     python3 -m pip install setuptools_scm --quiet --no-input
-    python3 -m pip install torch torchvision --index-url https://download.pytorch.org/whl/rocm6.4 --quiet --no-input
+    python3 -m pip install torch==2.8.0 torchvision==0.23.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/rocm6.4 --quiet --no-input
     python3 -m pip install transformers --quiet --no-input
     python3 -m pip install accelerate --quiet --no-input
     python3 -m pip install -U diffusers --quiet --no-input
