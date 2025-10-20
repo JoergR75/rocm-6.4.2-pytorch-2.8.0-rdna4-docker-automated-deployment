@@ -179,7 +179,7 @@ install_noble() {
     pip3 install --upgrade pip wheel --break-system-packages
     pip3 install joblib --break-system-packages
     pip3 install setuptools_scm --break-system-packages
-    pip3 install torch torchvision --index-url https://download.pytorch.org/whl/rocm6.4 --break-system-packages
+    pip3 install torch==2.8.0 torchvision==0.23.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/rocm6.4 --no-input --break-system-packages
     pip3 install transformers --break-system-packages
     pip3 install accelerate --break-system-packages
     pip3 install -U diffusers --break-system-packages
